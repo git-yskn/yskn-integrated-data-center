@@ -99,12 +99,13 @@
 <body class="h-full text-slate-800 flex flex-col font-sans select-none antialiased bg-slate-50">
 
     <!-- Login Overlay Modal (Wajib Login Sebelum Akses Dashboard) -->
-    <div id="login-overlay" class="fixed inset-0 bg-navy/95 z-50 flex items-center justify-center p-4">
+    <div id="login-overlay" class="fixed inset-0 bg-navy/95 z-[100] overflow-y-auto">
+      <div class="min-h-full flex items-center justify-center p-4">
         <div class="bg-white text-slate-800 rounded-2xl shadow-2xl max-w-md w-full p-6 sm:p-8 border-2 border-gold relative overflow-hidden">
             <div class="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-navy via-gold to-brand"></div>
             <div class="text-center mb-6">
-                <div class="w-16 h-16 mx-auto rounded-xl bg-navy border-2 border-gold flex items-center justify-center font-bold text-gold text-2xl shadow-md mb-3">
-                    YSKN
+                <div class="w-16 h-16 mx-auto rounded-xl bg-navy border-2 border-gold flex items-center justify-center font-bold text-gold text-2xl shadow-md mb-3 overflow-hidden">
+                    <img src="https://i.pinimg.com/736x/62/a0/b7/62a0b71fb690efc8fb3d6590f179163c.jpg" alt="Logo YSKN" class="w-full h-full object-cover" onerror="this.replaceWith(document.createTextNode('YSKN'))">
                 </div>
                 <h2 class="text-xl font-bold text-navy">Autentikasi Organ Yayasan</h2>
                 <p class="text-xs text-slate-500 mt-1">Silakan pilih peran dan masukkan PIN akses untuk masuk ke sistem kendali.</p>
@@ -154,6 +155,7 @@
                 <p>Dilindungi UU No. 16/2001 tentang Yayasan • Akses Terbatas Sesuai Kewenangan Organ</p>
             </div>
         </div>
+      </div>
     </div>
 
     <!-- Top Masthead / Header -->
@@ -161,8 +163,8 @@
         <div class="max-w-7xl mx-auto px-2.5 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-2">
             <!-- Brand -->
             <div class="flex items-center space-x-1.5 sm:space-x-3 min-w-0 flex-1">
-                <div class="w-8 h-8 sm:w-10 sm:h-10 rounded bg-navy-light border border-gold flex items-center justify-center font-bold text-gold text-xs sm:text-xl shadow flex-shrink-0">
-                    YSKN
+                <div class="w-8 h-8 sm:w-10 sm:h-10 rounded bg-navy-light border border-gold flex items-center justify-center font-bold text-gold text-xs sm:text-xl shadow flex-shrink-0 overflow-hidden">
+                    <img src="https://i.pinimg.com/736x/62/a0/b7/62a0b71fb690efc8fb3d6590f179163c.jpg" alt="Logo YSKN" class="w-full h-full object-cover" onerror="this.replaceWith(document.createTextNode('YSKN'))">
                 </div>
                 <div class="min-w-0 flex-1">
                     <h1 class="text-xs sm:text-lg font-bold tracking-tight text-white leading-tight truncate">YSKN Integrated Data Center</h1>
